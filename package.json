@@ -1,5 +1,5 @@
 {
-  "name": "json-format",
+  "name": "js-object-format",
   "version": "0.1.1",
   "description": "format js objects by css class only",
   "main": "dist/json-format.js",
