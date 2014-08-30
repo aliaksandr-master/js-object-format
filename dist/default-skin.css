@@ -1,0 +1,143 @@
+.fjson-index {
+	display: block;
+	font-size: 1em;
+	line-height: 1.1em;
+	text-align: left;
+}
+
+.fjson-block {
+	display: block;
+	overflow: hidden;
+	min-height: 1.1em;
+}
+
+.fjson-cover {
+	display: table-row;
+}
+
+.fjson-cover:after {
+	content: '';
+}
+
+.fjson-cover > .fjson-block {
+	display: table-cell;
+}
+
+.fjson-key {
+	display: table-cell;
+	padding: 0 0.4em 0 0.8em;
+	white-space: nowrap;
+	width: 1%;
+}
+.fjson-key:after {
+	content: ':';
+	color: #777;
+	font-weight: lighter;
+}
+
+.fjson-nan {
+	color: #999;
+}
+.fjson-nan:after {
+	content: 'NaN';
+}
+
+.fjson-undefined {
+	color: #999;
+}
+.fjson-undefined:after {
+	content: 'undefined';
+}
+
+.fjson-null {
+	color: #999;
+}
+.fjson-null:after {
+	content: 'null';
+}
+
+.fjson-boolean {
+	color: #cd7a00;
+}
+
+.fjson-string {
+	color: #009900;
+	white-space: pre;
+}
+
+.fjson-string-multi {
+	color: #8fa854;
+}
+
+.fjson-string-empty {
+	color: #999;
+}
+
+.fjson-string-empty:after {
+	content: '"';
+}
+
+.fjson-string-empty:before {
+	content: '"';
+}
+
+.fjson-number {
+	color: #cc0000;
+}
+
+.fjson-function {
+	color: #0000cc;
+}
+
+.fjson-regexp {
+	color: #528CE0;
+}
+
+.fjson-array {
+	display: table;
+	min-width: 100%;
+}
+
+.fjson-array:before {
+	content: '[';
+	display: block;
+	font-weight: lighter;
+}
+
+.fjson-array:after {
+	content: ']';
+	display: block;
+	font-weight: lighter;
+}
+
+.fjson-array-empty {
+}
+
+.fjson-array-empty:after,
+.fjson-array-empty:before {
+	display: inline-block;
+	color: #999;
+}
+
+.fjson-object {
+	display: table;
+	min-width: 100%;
+}
+
+.fjson-object:before {
+	content: '{';
+	display: block;
+	font-weight: lighter;
+}
+
+.fjson-object:after {
+	content: '}';
+	display: block;
+	font-weight: lighter;
+}
+
+.fjson-object-empty:after,
+.fjson-object-empty:before {
+	display: inline-block;
+	color: #999;
+}

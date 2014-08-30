@@ -1,0 +1,112 @@
+.fjson-compact-index {
+	display: block;
+	font-size: 1em;
+	line-height: 1.1em;
+	text-align: left;
+}
+
+.fjson-compact-block {
+	display: block;
+	overflow: hidden;
+	min-height: 1.1em;
+}
+
+.fjson-compact-cover {
+	display: table-row;
+}
+
+.fjson-compact-cover:after {
+	content: '';
+}
+
+.fjson-compact-cover > .fjson-compact-block {
+	display: table-cell;
+}
+
+.fjson-compact-key {
+	display: table-cell;
+	padding: 0 0.4em 0 0;
+	white-space: nowrap;
+	width: 1%;
+}
+.fjson-compact-key:after {
+	content: ':';
+	color: #777;
+	font-weight: lighter;
+}
+
+.fjson-compact-nan {
+	color: #999;
+}
+.fjson-compact-nan:after {
+	content: 'NaN';
+}
+
+.fjson-compact-undefined {
+	color: #999;
+}
+.fjson-compact-undefined:after {
+	content: 'undefined';
+}
+
+.fjson-compact-null {
+	color: #999;
+}
+.fjson-compact-null:after {
+	content: 'null';
+}
+
+.fjson-compact-string {
+	color: #009900;
+	white-space: pre;
+}
+
+.fjson-compact-boolean {
+	color: #cd7a00;
+}
+
+.fjson-compact-string-multi {
+	color: #8fa854;
+}
+
+.fjson-compact-string-empty {
+	color: #999;
+}
+
+.fjson-compact-string-empty:after {
+	content: '"';
+}
+
+.fjson-compact-string-empty:before {
+	content: '"';
+}
+
+.fjson-compact-number {
+	color: #cc0000;
+}
+
+.fjson-compact-function {
+	color: #0000cc;
+}
+
+.fjson-compact-regexp {
+	color: #528CE0;
+}
+
+.fjson-compact-array {
+	display: table;
+	min-width: 100%;
+}
+.fjson-compact-array-empty:after {
+	content: '[]';
+	color: #999;
+}
+
+.fjson-compact-object {
+	display: table;
+	min-width: 100%;
+}
+.fjson-compact-array-empty:after {
+	content: '{}';
+	color: #999;
+}
