@@ -1,0 +1,41 @@
+{
+  "name": "json-format",
+  "version": "0.1.1",
+  "homepage": "https://github.com/aliaksandr-pasynkau/json-format",
+  "authors": [
+    "Aliaksandr Pasynkau <alxe.master@gmail.com>"
+  ],
+  "description": "json-format",
+  "dependencies": {
+    "lodash": "*"
+  },
+  "main": "dist/json-format.js",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "json",
+    "formatter",
+    "formatting",
+    "js",
+    "object",
+    "format",
+    "json",
+    "view",
+    "css",
+    "json"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    ".jshintrc",
+    "**/*.txt",
+    "node_modules",
+    "bower_components",
+    "examples",
+    "test",
+    "tests"
+  ]
+}
