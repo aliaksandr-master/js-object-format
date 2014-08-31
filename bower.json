@@ -1,7 +1,7 @@
 {
   "name": "js-object-format",
-  "version": "1.0.1",
-  "homepage": "https://github.com/aliaksandr-pasynkau/json-format",
+  "version": "1.0.2",
+  "homepage": "https://github.com/aliaksandr-pasynkau/js-object-format",
   "authors": [
     "Aliaksandr Pasynkau <alxe.master@gmail.com>"
   ],
@@ -9,7 +9,7 @@
   "dependencies": {
     "lodash": "*"
   },
-  "main": "dist/json-format.js",
+  "main": "dist/js-object-format.js",
   "moduleType": [
     "amd",
     "globals",

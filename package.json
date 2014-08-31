@@ -1,14 +1,14 @@
 {
   "name": "js-object-format",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "format js objects by css class only",
-  "main": "dist/json-format.js",
+  "main": "src/module.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aliaksandr-pasynkau/json-format.git"
+    "url": "https://github.com/aliaksandr-pasynkau/js-object-format.git"
   },
   "dependencies": {
     "lodash": "latest"
@@ -40,6 +40,6 @@
   "author": "Aliaksandr Pasynkau",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aliaksandr-pasynkau/json-format/issues"
+    "url": "https://github.com/aliaksandr-pasynkau/js-object-format/issues"
   }
 }
