@@ -1,0 +1,156 @@
+@import "config";
+
+.skin () {
+	&index {
+		display: block;
+		font-size: 1em;
+		line-height: 1.2em;
+		text-align: left;
+	}
+
+	&val {
+		display: block;
+		overflow: hidden;
+		min-height: 1.1em;
+	}
+
+	&recursive {
+		color: @fjs-recursive-color;
+
+		&:after {
+			content: @fjs-recursive-text;
+		}
+	}
+
+	&item {
+		display: table-row;
+
+		&:after {
+			content: '';
+		}
+	}
+
+	&item > &val {
+		display: table-cell;
+	}
+
+	&key {
+		display: table-cell;
+		padding: 0 0.4em 0 0;
+		white-space: nowrap;
+		width: 1%;
+
+		&:after {
+			content: ':';
+			font-weight: lighter;
+		}
+	}
+
+	&nan {
+		color: @fjs-nan-color;
+
+		&:after {
+			content: @fjs-nan-text;
+		}
+	}
+
+	&undefined {
+		color: @fjs-undefined-color;
+
+		&:after {
+			content: @fjs-undefined-text;
+		}
+	}
+
+	&null {
+		color: @fjs-null-color;
+
+		&:after {
+			content: @fjs-null-text;
+		}
+	}
+
+	&string {
+		color: @fjs-string-color;
+		white-space: pre;
+
+		&-multi {
+			color: @fjs-string-multi-line-color;
+		}
+
+		&-empty {
+			color: @fjs-string-empty-color;
+
+			&:after {
+				display: inline-block;
+				font-weight: lighter;
+				content: '"';
+			}
+
+			&:before {
+				display: inline-block;
+				font-weight: lighter;
+				content: '"';
+			}
+		}
+	}
+
+	&boolean {
+		color: @fjs-boolean-color;
+	}
+
+	&number {
+		color: @fjs-number-color;
+	}
+
+	&function {
+		color: @fjs-function-color;
+		white-space: pre;
+	}
+
+	&regexp {
+		color: @fjs-regexp-color;
+	}
+
+	&array {
+		display: table;
+		min-width: 100%;
+
+		&&-empty {
+			color: @fjs-array-empty-color;
+
+			&:before {
+				font-weight: lighter;
+				display: inline-block;
+				content: '[';
+			}
+
+			&:after {
+				font-weight: lighter;
+				display: inline-block;
+				content: ']';
+			}
+		}
+	}
+
+	&object {
+		display: table;
+		min-width: 100%;
+
+		&&-empty {
+			color: @fjs-object-empty-color;
+
+			&:before {
+				font-weight: lighter;
+				display: inline-block;
+				content: '{';
+			}
+
+			&:after {
+				font-weight: lighter;
+				display: inline-block;
+				content: '}';
+			}
+		}
+	}
+}

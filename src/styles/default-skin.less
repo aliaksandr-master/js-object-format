@@ -1,0 +1,51 @@
+@import "inc/skin";
+
+.fjs- {
+	.skin();
+
+	&key {
+		padding-left: 1em;
+	}
+
+	&string {
+		&:before {
+			content: '"';
+			display: inline-block;
+			font-weight: lighter;
+		}
+
+		&:after {
+			content: '"';
+			display: inline-block;
+			font-weight: lighter;
+		}
+	}
+
+	&array {
+		&:before {
+			content: '[';
+			display: block;
+			font-weight: lighter;
+		}
+
+		&:after {
+			content: ']';
+			display: block;
+			font-weight: lighter;
+		}
+	}
+
+	&object {
+		&:before {
+			content: '{';
+			display: block;
+			font-weight: lighter;
+		}
+
+		&:after {
+			content: '}';
+			display: block;
+			font-weight: lighter;
+		}
+	}
+}

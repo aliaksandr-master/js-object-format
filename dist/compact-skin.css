@@ -1,112 +1,121 @@
-.fjson-compact-index {
-	display: block;
-	font-size: 1em;
-	line-height: 1.1em;
-	text-align: left;
-}
-
-.fjson-compact-block {
-	display: block;
-	overflow: hidden;
-	min-height: 1.1em;
-}
-
-.fjson-compact-cover {
-	display: table-row;
-}
-
-.fjson-compact-cover:after {
-	content: '';
-}
-
-.fjson-compact-cover > .fjson-compact-block {
-	display: table-cell;
-}
-
-.fjson-compact-key {
-	display: table-cell;
-	padding: 0 0.4em 0 0;
-	white-space: nowrap;
-	width: 1%;
-}
-.fjson-compact-key:after {
-	content: ':';
-	color: #777;
-	font-weight: lighter;
-}
-
-.fjson-compact-nan {
-	color: #999;
-}
-.fjson-compact-nan:after {
-	content: 'NaN';
-}
-
-.fjson-compact-undefined {
-	color: #999;
-}
-.fjson-compact-undefined:after {
-	content: 'undefined';
-}
-
-.fjson-compact-null {
-	color: #999;
-}
-.fjson-compact-null:after {
-	content: 'null';
-}
-
-.fjson-compact-string {
-	color: #009900;
-	white-space: pre;
-}
-
-.fjson-compact-boolean {
-	color: #cd7a00;
-}
-
-.fjson-compact-string-multi {
-	color: #8fa854;
-}
-
-.fjson-compact-string-empty {
-	color: #999;
-}
-
-.fjson-compact-string-empty:after {
-	content: '"';
-}
-
-.fjson-compact-string-empty:before {
-	content: '"';
-}
-
-.fjson-compact-number {
-	color: #cc0000;
-}
-
-.fjson-compact-function {
-	color: #0000cc;
-}
-
-.fjson-compact-regexp {
-	color: #528CE0;
-}
-
-.fjson-compact-array {
-	display: table;
-	min-width: 100%;
-}
-.fjson-compact-array-empty:after {
-	content: '[]';
-	color: #999;
-}
-
-.fjson-compact-object {
-	display: table;
-	min-width: 100%;
-}
-.fjson-compact-array-empty:after {
-	content: '{}';
-	color: #999;
-}
+.fjs-compact-index {
+    display: block;
+    font-size: 1em;
+    line-height: 1.2em;
+    text-align: left;
+    }
+.fjs-compact-val {
+    display: block;
+    min-height: 1.1em;
+    overflow: hidden;
+    }
+.fjs-compact-recursive {
+    color: #ee82ee;
+    }
+.fjs-compact-recursive:after {
+    content: '<RECURSIVE LINK>';
+    }
+.fjs-compact-item {
+    display: table-row;
+    }
+.fjs-compact-item:after {
+    content: '';
+    }
+.fjs-compact-item > .fjs-compact-val {
+    display: table-cell;
+    }
+.fjs-compact-key {
+    display: table-cell;
+    width: 1%;
+    padding: 0 .4em 0 0;
+    white-space: nowrap;
+    }
+.fjs-compact-key:after {
+    font-weight: lighter;
+    content: ':';
+    }
+.fjs-compact-nan {
+    color: #999;
+    }
+.fjs-compact-nan:after {
+    content: 'NaN';
+    }
+.fjs-compact-undefined {
+    color: #999;
+    }
+.fjs-compact-undefined:after {
+    content: 'undefined';
+    }
+.fjs-compact-null {
+    color: #999;
+    }
+.fjs-compact-null:after {
+    content: 'null';
+    }
+.fjs-compact-string {
+    color: #090;
+    white-space: pre;
+    }
+.fjs-compact-string-multi {
+    color: #8fa854;
+    }
+.fjs-compact-string-empty {
+    color: #999;
+    }
+.fjs-compact-string-empty:after {
+    display: inline-block;
+    font-weight: lighter;
+    content: '"';
+    }
+.fjs-compact-string-empty:before {
+    display: inline-block;
+    font-weight: lighter;
+    content: '"';
+    }
+.fjs-compact-boolean {
+    color: #00c;
+    }
+.fjs-compact-number {
+    color: #c00;
+    }
+.fjs-compact-function {
+    color: #00c;
+    white-space: pre;
+    }
+.fjs-compact-regexp {
+    color: #528ce0;
+    }
+.fjs-compact-array {
+    display: table;
+    min-width: 100%;
+    }
+.fjs-compact-array.fjs-compact-array-empty {
+    color: #999;
+    }
+.fjs-compact-array.fjs-compact-array-empty:before {
+    display: inline-block;
+    font-weight: lighter;
+    content: '[';
+    }
+.fjs-compact-array.fjs-compact-array-empty:after {
+    display: inline-block;
+    font-weight: lighter;
+    content: ']';
+    }
+.fjs-compact-object {
+    display: table;
+    min-width: 100%;
+    }
+.fjs-compact-object.fjs-compact-object-empty {
+    color: #999;
+    }
+.fjs-compact-object.fjs-compact-object-empty:before {
+    display: inline-block;
+    font-weight: lighter;
+    content: '{';
+    }
+.fjs-compact-object.fjs-compact-object-empty:after {
+    display: inline-block;
+    font-weight: lighter;
+    content: '}';
+    }

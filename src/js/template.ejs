@@ -1,0 +1,38 @@
+(function(root, factory) {
+	'use strict';
+
+	if (typeof define === 'function' && define.amd) {
+		define(['lodash'], function(_) {
+			return factory(_);
+		});
+
+	} else if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+		module.exports = factory(require('lodash'));
+
+	} else {
+		var module = factory(root._),
+			prev = root['<%= name %>'];
+
+		root['<%= name %>'] = module;
+
+		module.noConflict = function () {
+			if (prev !== null) {
+				root['<%= name %>'] = prev;
+				prev = null;
+			}
+
+			return module;
+		};
+	}
+}(this, function(_) {
+	'use strict';
+<% _content = content.replace(/['"]use strict['"]\s*;?/g, '').replace(/^/gm, '\t') %>
+<% if (/module.exports\s*=\s*/.test(_content)) {%>
+	<%= _content.replace(/module.exports\s*=\s*/, 'return ') %>
+<% } else { %>
+	var module = {},
+		exports = module.exports = {};
+	<%= _content %>
+	return module.exports;
+<% }%>
+}));
