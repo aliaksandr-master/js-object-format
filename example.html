@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Example</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            margin: 10px 50px 0;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        h2 {
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="dist/compact-skin.css"/>
+    <link rel="stylesheet" href="dist/default-skin.css"/>
+    <script type="text/javascript" src="dist/js-object-format.min.js"></script>
+</head>
+<body>
+    <h2>JS OBJECT:</h2>
+<script type="text/javascript" style="display: block; white-space: pre;">
+var objectToFormat = {
+    a: 1,
+    b: {},
+    c: [],
+    d: undefined,
+    e: null,
+    f: NaN,
+    g: function (a, b) {
+        return a + b;
+    },
+    h: {
+        a: 1,
+        b: 'some string',
+        c: 'some string\nwith new line',
+        d: ['some recursive']
+    },
+    i: '',
+    j: 123.123,
+    k: true,
+    l: new Boolean(0),
+    m: [
+        {a: 1, b: 'some'},
+        {a: 2, b: ''},
+        {a: 3, b: undefined}
+    ]
+};
+objectToFormat.n = objectToFormat;
+objectToFormat.o = objectToFormat.h.d;
+</script>
+    <div style="float: left; width: 50%;">
+        <h2>Default Skin:</h2>
+        <div id="result-default"></div>
+    </div>
+    <div style="float: left; width: 50%;">
+        <h2>Compact Skin:</h2>
+        <div id="result-compact"></div>
+    </div>
+
+    <script type="text/javascript">
+        var $resultDefault = document.getElementById('result-default');
+        var $resultCompact = document.getElementById('result-compact');
+
+        var htmlDefault = jsObjectFormat.format(objectToFormat, {pref: 'fjs-'});
+        var htmlCompact = jsObjectFormat.format(objectToFormat, {pref: 'fjs-compact-'});
+
+        $resultCompact.insertAdjacentHTML('afterBegin', htmlCompact);
+        $resultDefault.insertAdjacentHTML('afterBegin', htmlDefault);
+    </script>
+</body>
+</html>
